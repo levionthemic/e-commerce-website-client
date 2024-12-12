@@ -1,0 +1,28 @@
+.inner-wrap-user-order {
+  position: relative;
+
+  .inner-search {
+    border: 1px solid #a4a4a5;
+    border-radius: 3px;
+    background-color: white;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    
+
+    form {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    input {
+      font-family: "Roboto", sans-serif;
+      border: none;
+      outline: none;
+
+      &::placeholder {
+        color: rgba(0, 0, 0, 50%);
+      }
+    }
+  }
+}

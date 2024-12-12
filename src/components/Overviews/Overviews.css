@@ -1,0 +1,64 @@
+.stat-box {
+    background-color: #F5F5DC;
+    width: 160px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.stat-box-3 {
+    background-color: #F5F5DC;
+    width: 340px;
+    height: 120px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.icon-box {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+/* Màu nền cho các icon trong ô */
+.bg-pink {
+    background-color: #f06292;
+    /* Màu hồng cho Tổng đơn hàng */
+}
+
+.bg-blue {
+    background-color: #007bff;
+    /* Màu xanh dương cho Đơn hàng mới */
+}
+
+.bg-green {
+    background-color: #28a745;
+    /* Màu xanh lá cho Đơn thành công */
+}
+.bg-money {
+    background-color: #09daf1;
+}
+.bg-red {
+    background-color: #dc3545;
+    /* Màu đỏ cho Đơn bị hủy */
+}
+.card{
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}

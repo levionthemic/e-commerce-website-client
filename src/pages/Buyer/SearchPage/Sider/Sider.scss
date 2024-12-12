@@ -1,0 +1,21 @@
+.sider-category {
+  border-radius: 8px;
+  background-color: white;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.title {
+  font-weight: 500;
+  background-color: white;
+  padding-left: 13px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  height: 45px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+  margin: 0;
+}

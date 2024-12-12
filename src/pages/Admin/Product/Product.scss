@@ -1,0 +1,23 @@
+.page-title {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.dropdown-button {
+  border: 1px solid black;
+  color: black;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 3px 10px;
+}
+
+.delete-btn:first-child {
+  border-color: rgb(50, 173, 50);
+  color: rgb(50, 173, 50);
+}
+
+.delete-btn:first-child:hover {
+  background-color: rgb(190, 247, 190);
+}

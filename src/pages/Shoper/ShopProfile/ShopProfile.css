@@ -1,0 +1,380 @@
+/* Tổng thể */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 0;
+}
+
+.shop-profile {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+/* Banner */
+.banner-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.banner-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  background-color: #eaeaea;
+}
+
+.change-banner {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.change-banner:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+}
+
+/* Avatar */
+.avatar-container {
+  position: absolute;
+  top: 300px;
+  left: 80%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.avatar-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  object-fit: cover;
+  background-color: #eaeaea;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.change-avatar {
+  margin-top: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.change-avatar:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+}
+
+/* Tên cửa hàng */
+.shop-name {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+.shop-name h2 {
+  font-size: 28px;
+  color: #333;
+  margin: 10px 0;
+  letter-spacing: 1px;
+}
+
+/* Tên Shop */
+.shop-name-container {
+  margin-top: 150px; /* Đảm bảo khoảng cách phù hợp với avatar */
+  text-align: center;
+}
+
+.display-shop-name {
+  margin-top: 20px; /* Khoảng cách giữa tên shop và banner */
+}
+
+.description1-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Hiển thị đầy đủ khi người dùng chọn "Xem thêm" */
+.description1 {
+  max-height: 60px; /* Giới hạn chiều cao mặc định */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  margin: 0;
+  background-color: transparent; /* Xóa nền */
+  opacity: 1; /* Không mờ */
+}
+
+.description1.full {
+  max-height: none; /* Bỏ giới hạn khi người dùng chọn "Xem thêm" */
+  overflow: visible;
+}
+
+/* Căn chỉnh đồng bộ các row */
+.row {
+  margin: 0;
+  padding: 0;
+}
+
+.card-shop {
+  background: #ffffff; /* Màu nền trắng */
+  border: 1px solid #ddd; /* Viền màu xám nhạt */
+  border-radius: 10px; /* Góc bo tròn */
+  padding: 20px; /* Khoảng cách bên trong card */
+  margin-bottom: 15px; /* Khoảng cách giữa các card */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng nhẹ */
+  transition: all 0.2s ease-in-out; /* Hiệu ứng chuyển động khi hover */
+  text-align: left; /* Căn lề trái cho nội dung */
+}
+
+.card-shop:hover {
+  transform: translateY(-5px); /* Hiệu ứng nổi lên khi hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Đổ bóng đậm hơn khi hover */
+}
+
+.card-shop h5 {
+  font-size: 16px; /* Kích thước chữ của tiêu đề */
+  color: #007bff; /* Màu xanh cho tiêu đề */
+  margin-bottom: 10px; /* Khoảng cách dưới tiêu đề */
+  display: flex; /* Tiêu đề hiển thị ngang với icon */
+  align-items: center; /* Căn giữa icon và chữ theo chiều dọc */
+  gap: 10px; /* Khoảng cách giữa icon và chữ */
+}
+
+/* Biểu tượng */
+.card-shop .icon {
+  font-size: 20px; /* Kích thước biểu tượng */
+  color: #007bff; /* Màu xanh giống với tiêu đề */
+}
+
+/* Văn bản hoặc input */
+.card-shop p,
+.card-shop .form-control {
+  font-size: 14px; /* Kích thước chữ cho văn bản */
+  color: #333; /* Màu chữ đen nhạt */
+  margin: 0; /* Xóa khoảng cách mặc định */
+  line-height: 1.6; /* Tăng khoảng cách dòng để dễ đọc */
+  text-align: justify; /* Căn đều 2 bên */
+  padding-left: 5px; /* Thêm khoảng cách từ viền trái */
+  padding-right: 5px; /* Thêm khoảng cách từ viền phải */
+}
+
+/* Textarea */
+.card-shop textarea {
+  resize: none; /* Vô hiệu hóa thay đổi kích thước */
+  width: 100%; /* Độ rộng bằng khung cha */
+  height: auto; /* Độ cao tự động điều chỉnh */
+  padding: 10px; /* Khoảng cách bên trong textarea */
+  border: 1px solid #ccc; /* Viền xám nhẹ */
+  border-radius: 5px; /* Bo tròn góc */
+  line-height: 1.5; /* Khoảng cách dòng trong textarea */
+}
+
+/* Khoảng cách đồng bộ giữa các phần */
+.card-shop + .card-shop {
+  margin-top: 15px; /* Khoảng cách giữa các card liền kề */
+}
+
+.card-shop p {
+  font-size: 14px; /* Kích thước chữ vừa phải */
+  color: #333; /* Màu chữ dễ nhìn */
+  margin: 0; /* Xóa khoảng cách trên và dưới */
+  text-align: justify; /* Căn đều hai bên */
+  line-height: 1.6; /* Giãn dòng để dễ đọc */
+}
+
+.card-shop .btn-link {
+  display: block; /* Đảm bảo nút "Xem thêm/Thu gọn" nằm riêng */
+  margin-top: 10px; /* Tạo khoảng cách giữa đoạn văn và nút */
+  text-align: right; /* Căn nút về bên phải */
+  color: #007bff; /* Màu chữ nút */
+  text-decoration: none; /* Xóa gạch chân */
+  font-size: 14px; /* Kích thước chữ vừa phải */
+  font-weight: bold; /* Làm đậm chữ */
+}
+
+.card-shop .btn-link:hover {
+  color: #0056b3; /* Đổi màu khi hover */
+  text-decoration: underline; /* Gạch chân khi hover */
+}
+
+/* Khoảng cách đồng bộ giữa các phần */
+.shop-info .row + .row {
+  margin-top: 15px;
+}
+
+/* Nút chỉnh sửa */
+.text-center {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.btn-primary:active {
+  transform: scale(0.98);
+}
+
+/* Icon */
+.icon {
+  color: #007bff;
+  font-size: 18px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 100%;
+  }
+
+  .banner-img {
+    height: 200px;
+  }
+
+  .avatar-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .change-avatar {
+    padding: 5px 8px;
+    font-size: 10px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+/* Kiểu font và hiệu ứng cho văn bản */
+.shop-title {
+  font-size: 16px; /* Kích thước chữ */
+  font-weight: bold; /* Làm đậm chữ */
+  color: #007bff; /* Màu xanh giống ví dụ */
+  text-decoration: none; /* Không gạch dưới */
+  transition: color 0.3s ease; /* Hiệu ứng chuyển màu khi hover */
+}
+
+.editor-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.editor-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.editor {
+  margin-bottom: 20px;
+}
+
+.scale-slider {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.editor-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.save-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.cancel-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.header-actions .btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.change-avatar,
+.change-banner {
+  position: absolute;
+  background-color: #007bff;
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.change-avatar {
+  bottom: -20px;
+  right: 20px;
+}
+
+.change-banner {
+  top: 10px;
+  right: 10px;
+}

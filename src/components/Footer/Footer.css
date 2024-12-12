@@ -1,0 +1,106 @@
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+  box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.2);
+  font-size: 0.9rem;
+}
+
+.footer h3 {
+  color: #f9a602;
+  text-align: left;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.footer ul {
+  padding: 0;
+  list-style-type: none;
+  text-align: left;
+}
+
+.footer li {
+  margin-bottom: 8px;
+}
+
+.footer__container {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer__section {
+  padding: 0 10px;
+  flex: 1;
+}
+
+.footer__contact p {
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #f9a602;
+}
+
+.footer__social-icons a {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer__social-icons a span {
+  margin-left: 10px;
+  font-size: 0.85rem;
+}
+
+.footer__social-icons a:hover {
+  color: #f9a602;
+}
+
+.footer__email-form {
+  display: flex;
+  align-items: center;
+  font-size: 0.7rem; /* Giảm kích thước font */
+}
+
+.footer__email-form input {
+  flex: 1;
+  padding: 6px; /* Thu nhỏ chiều cao */
+  margin-right: 10px;
+  font-size: 0.7rem; /* Giảm kích thước chữ */
+  border-radius: 5px; /* Tạo góc bo tròn */
+}
+
+.footer__email-form button {
+  padding: 8px 15px; /* Thu nhỏ nút */
+  background-color: #f9a602;
+  color: #333;
+  font-size: 0.7rem; /* Giảm kích thước chữ */
+  border: none;
+  cursor: pointer;
+  border-radius: 5px; /* Tạo góc bo tròn */
+}
+
+.footer__email-form button:hover {
+  background-color: #e89a00;
+}
+
+.footer__bottom {
+  padding-top: 15px;
+  border-top: 1px solid #555;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 0.8rem;
+}

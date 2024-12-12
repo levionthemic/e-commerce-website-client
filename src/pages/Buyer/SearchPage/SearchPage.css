@@ -1,0 +1,96 @@
+/* Chỉ ảnh hưởng tới phần search-page */
+.search-page {
+  padding-top: 20px;
+}
+
+/* CSS cho các bộ lọc */
+.search-page .filters-section {
+  background-color: #f8f8f8;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  position: sticky;
+  top: 100px;
+  left: 0;
+  margin-bottom: 20px;
+  width: 95%;
+  max-height: 100vh;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.search-page .filters-section h5 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.search-page .filters-section .form-label {
+  font-weight: bold;
+}
+
+.search-page .filters-section .form-check {
+  margin-bottom: 10px;
+}
+
+.search-page .filters-section button {
+  margin-top: 15px;
+}
+
+.search-page .inner-service {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-bottom: 5px;
+  margin: 10px 0;
+  border-bottom: 1px solid black;
+}
+
+.search-page .inner-service .inner-sort {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+}
+
+.search-page .inner-service .inner-sort span {
+  white-space: nowrap;
+}
+
+.search-page .inner-service .inner-sort select {
+  padding: 2px 40px 2px 5px;
+  font-size: 14px;
+}
+
+.search-page .pagination {
+  gap: 5px;
+  margin: 0;
+}
+
+.search-page .pagination .page-item .page-link {
+  padding: 1px 6px;
+  border-radius: 5px;
+  border: 1px solid black;
+  color: black;
+  font-size: 13px;
+}
+
+.search-page .pagination .page-item:first-child .page-link,
+.search-page .pagination .page-item:last-child .page-link {
+  background-color: black;
+  color: white;
+}
+
+.search-page .pagination .page-item.active .page-link {
+  background-color: black;
+  border-color: black;
+  color: white;
+}
+
+.search-page .dropdown-toggle {
+  border-radius: 8px;
+}
+
+.search-page .row.g-3 {
+  row-gap: 0px;
+}

@@ -1,0 +1,19 @@
+.header-admin {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 10px 20px;
+
+  i {
+    font-size: 20px;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+      transition: transform 0.3s ease-in-out;
+    }
+  }
+}

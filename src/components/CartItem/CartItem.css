@@ -1,0 +1,31 @@
+.cart-item {
+  padding: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.cart-item:hover {
+  background-color: #f9f9f9; /* Thay đổi màu nền khi hover */
+}
+
+.cart-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cart-item .product-name {
+  font-weight: bold;
+}
+
+.cart-item .btn-delete {
+  color: #fff;
+  background-color: #ff4d4f;
+  border: none;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+}
+
+.cart-item .btn-delete:hover {
+  background-color: #ff7875; /* Màu khi hover */
+}

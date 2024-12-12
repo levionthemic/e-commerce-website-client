@@ -1,0 +1,131 @@
+.box-signup {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+
+  .inner-wrap {
+    width: 60%;
+    height: fit-content;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate((-50%, -50%));
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    .inner-content {
+      width: 50%;
+      padding: 0 50px;
+
+      .inner-goback {
+        position: absolute;
+        top: 5%;
+        left: 20px;
+  
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .inner-title {
+        margin-bottom: 30px;
+      }
+
+      .inner-form {
+        form {
+          display: flex;
+          flex-direction: column;
+          gap: 25px;
+
+          .btn-group {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: 10px;
+
+            .btn-check:checked + .btn {
+              background-color: black;
+              color: white;
+            }
+
+            .options {
+              border: 1px solid black;
+              width: 33%;
+              border-radius: 10px !important;
+              margin: 0;
+              overflow: hidden;
+
+              label {
+                padding: 6px 12px;
+                width: 100%;
+                border: none;
+                color: black;
+                font-weight: 500;
+                font-size: 0.85rem;
+
+                &:hover {
+                  background-color: black;
+                  color: white;
+                  border: 1px solid black;
+                  margin: 0;
+                }
+              }
+            }
+          }
+
+          input {
+            text-align: left;
+            border: 0;
+            outline: 0;
+            border-bottom: 1px solid #ddd;
+
+            &:focus {
+              box-shadow: none;
+            }
+
+            &::placeholder {
+              /* Nhập mật khẩu */
+              color: rgba(0, 0, 0, 0.2);
+            }
+          }
+
+          button {
+            width: 100%;
+            background-color: #d9d9d9;
+            columns: black;
+            font-weight: 500;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            padding: 15px 0;
+          }
+        }
+
+        .inner-forgot {
+          margin-top: 50px;
+          text-align: center;
+          span {
+            color: #2368C3;
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+
+    .inner-image {
+      width: 50%;
+      img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1/1;
+        object-fit: contain;
+      }
+    }
+  }
+}

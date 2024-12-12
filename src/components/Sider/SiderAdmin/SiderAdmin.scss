@@ -1,0 +1,112 @@
+.sider-admin {
+  background-color: var(--color-bg-1);
+  height: 100vh;
+  position: fixed;
+  width: 17%;
+
+  .sider-logo {
+    padding: 40px 20px;
+    border-bottom: 1px solid white;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
+  .sider-info {
+    padding: 10px;
+    margin: 10px 0 10px 0px;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+      background: #ecb1b34f;
+      cursor: pointer;
+    }
+
+    .inner-avatar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30%;
+      img {
+        width: 70%;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+    .inner-info {
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  .sider-info-active {
+    background: #ecb1b34f;
+  }
+
+  .sider-menu {
+    width: 100%;
+
+    .sider-menu-item {
+      border-radius: 10px;
+      overflow: hidden;
+      padding: 15px;
+      height: auto;
+
+      display: flex;
+      align-items: center;
+      color: white;
+
+      gap: 15px;
+      text-decoration: none;
+      margin-bottom: 10px;
+
+      &:hover {
+        background: #ecb1b34f;
+        cursor: pointer;
+      }
+    }
+
+    .sider-menu-active {
+      background: #ecb1b34f;
+    }
+  }
+
+  .sider-actions {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+
+    .sider-action {
+      display: flex;
+      align-items: center;
+      color: white;
+      padding: 8px 15px;
+      gap: 15px;
+      border-radius: 10px;
+
+      a {
+        display: flex;
+        align-items: center;
+        color: white;
+        gap: 15px;
+        border-radius: 10px;
+        text-decoration: none;
+        width: 100%;
+      }
+
+      &:hover {
+        background: #ecb1b34f;
+        cursor: pointer;
+      }
+    }
+  }
+}
