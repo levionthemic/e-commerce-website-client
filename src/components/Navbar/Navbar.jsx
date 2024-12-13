@@ -12,43 +12,44 @@ import {
 import { axiosApi } from "../../services/UserService";
 import { setCartQuantity } from "../../redux/slices/cartSlice";
 
-const items = [
-  {
-    label: <Link to="/user/info">Tài khoản của tôi</Link>,
-    key: "0",
-  },
-  {
-    label: <Link to="/user/order">Đơn hàng của tôi</Link>,
-    key: "1",
-  },
-  {
-    label: <Link to="/settings">Cài đặt</Link>,
-    key: "2",
-  },
-  {
-    type: "divider",
-  },
-  {
-    label: (
-      <span
-        style={{ color: "red", fontWeight: "bold" }}
-        onClick={() => {
-          localStorage.clear();
-          window.location.reload();
-        }}
-      >
-        Đăng xuất
-      </span>
-    ),
-    key: "3",
-  },
-];
-
 function Navbar() {
   const [searchKeyword, setSearchKeyword] = useState("");
   const navigate = useNavigate();
   const cartQuantity = useSelector((state) => state.cart.quantity);
   const dispatch = useDispatch();
+
+  const items = [
+    {
+      label: <Link to="/user/info">Tài khoản của tôi</Link>,
+      key: "0",
+    },
+    {
+      label: <Link to="/user/order">Đơn hàng của tôi</Link>,
+      key: "1",
+    },
+    {
+      label: <Link to="/settings">Cài đặt</Link>,
+      key: "2",
+    },
+    {
+      type: "divider",
+    },
+    {
+      label: (
+        <span
+          style={{ color: "red", fontWeight: "bold" }}
+          onClick={() => {
+            localStorage.clear();
+            window.location.reload();
+            navigate("/auth/login");
+          }}
+        >
+          Đăng xuất
+        </span>
+      ),
+      key: "3",
+    },
+  ];
 
   const handleSearch = () => {
     if (searchKeyword.trim()) {
